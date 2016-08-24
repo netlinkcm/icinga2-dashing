@@ -56,6 +56,7 @@ RUN git clone git://github.com/ry/node.git
 RUN cd node;./configure;make;sudo make install
 
 # Install Dashing
+RUN gem install bundler
 RUN gem install dashing
     
 # Create a default dashboard

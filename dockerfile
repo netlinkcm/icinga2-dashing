@@ -1,5 +1,5 @@
 # Dockerfile for dashing icinga2 with icingaweb2
-# https://github.com/netlink/icinga2-dashing
+# https://github.com/netlinkcm/icinga2-dashing
 
 FROM debian:jessie
 

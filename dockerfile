@@ -59,11 +59,11 @@ RUN cd node;./configure;make;sudo make install
 RUN gem install dashing
     
 # Create a default dashboard
-RUN dashing new mydashboard
-RUN cd mydashboard;bundle
+RUN dashing new netlinkdashboard
+RUN cd netlinkdashboard;bundle
 
 # Launch the dashboard
-CMD cd /mydashboard;dashing start
+CMD cd /netlinkdashboard;dashing start
 
 # Initialize and run Supervisor
 ENTRYPOINT ["/opt/run"]
